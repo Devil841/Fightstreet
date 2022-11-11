@@ -57,10 +57,10 @@ class games {
    }
 
    reset() {
-      Ryu.health = `Health : ${100}`;
-      Ken.health = `Health : ${100}`;
-      healthp.innerText = Ryu.health;
-      healthe.innerText = Ken.health;
+      Ryu.health = 100;
+      Ken.health = 100;
+      healthp.innerText = `Health : ${Ryu.health}`;
+      healthe.innerText = `Health : ${Ken.health}`;
    }
 }
 
