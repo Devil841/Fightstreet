@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="parent">
+         <h1>Welcome to The Street Fighter!</h1>
+         <div class="child">
+            <div class="child1">
+               <img src="ryu.gif" alt="" id="ryu" />
+               <p class="health" id="healthr">Health: --</p>
+               <button class="butts" id="attackr">Attack : Q</button>
+               <button class="butts" id="healr">Attack : A</button>
+            </div>
+            <div class="autoplay"><button id="sim">Simulate</button></div>
+            <div class="child2">
+               <img src="ken.gif" alt="" id="ken" />
+               <p class="health" id="healthk">Health: --</p>
+               <button class="butts" id="attackk">Attack : P</button>
+               <button class="butts" id="healk">Attack : L</button>
+            </div>
+         </div>
+         <button id="play" onclick="game.play()">Play</button>
+         <button id="reset" onclick="game.reset()">Reset</button>
+         <p id="result"></p>
+      </div>
+
+      <audio
+         src="sounds/quickhit.mp3"
+         type="audio/mpeg"
+         id="qp"
+         style="display: none"
+      ></audio>
+      <audio
+         src="sounds/quickheal.mp3"
+         type="audio/mpeg"
+         id="qh"
+         style="display: none"
+      ></audio>
+      <audio
+         src="sounds/fastpunch.mp3"
+         type="audio/mpeg"
+         id="fp"
+         style="display: none"
+      ></audio>
+      <audio
+         src="sounds/fastheal.mp3"
+         type="audio/mpeg"
+         id="fh"
+         style="display: none"
+      ></audio>
+      <audio
+         src="sounds/victory.mp3"
+         type="audio/mpeg"
+         id="v"
+         style="display: none"
+      ></audio>
+      <script src="script.js"></script>
+   </body>
+</html>

@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+h1{
+    margin-bottom: 2rem;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.parent{
+    /* background-color: red; */
+    background-color: y;
+    text-align: center;
+}
+
+.child{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.child1{
+    height: auto;
+    flex:1;
+    display: inline-block;
+}
+.child2{
+    height: auto;
+    flex:1;
+    display: inline-block;
+}
+
+#ryu{
+    width: 100%;
+    max-width: 6em;
+    margin-bottom: 1.6rem;
+}
+#ken{
+    width: 100%;
+    max-width: 6.5em;
+    margin-bottom: 1rem;
+
+}
+
+#sim{
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
+}
+.child1{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.child2{
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+.butts{
+    padding: 0.5rem 2rem;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#healr{
+    background-color: green;
+}
+#healk{
+    background-color: green ;
+}
+.health{
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+}
+
+#result{
+    display: nne;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.autoplay{
+    width: max-content;
+}
+
+#play{
+    background-color: orange;
+    border-radius: 10%;
+    padding: 1rem 2rem;
+    border: 0.5px solid black;
+    margin-bottom: 1rem;
+}
+
+#reset{
+    background-color: rgb(110, 0, 0);
+    border-radius: 10%;
+    padding: 1rem 2rem;
+    border: 0.5px solid black;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:530px) {
+
+    #sim{
+    font-size: 0.8rem;
+        }
+    
+    .health{
+        font-size: 1.2em;
+    }
+    .butts{
+        padding: 0.2rem 1rem;
+        background-color: yellow;
+        border: 1px solid black;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+
+    #sim{
+    font-size: 0.5rem;
+        }
+    
+    .health{
+        font-size: 1rem;
+    }
+    .butts{
+        padding: 0.1rem 0.5rem;
+        background-color: yellow;
+        border: 1px solid black;
+    }
+
+}
+@media screen and (max-width:360px) {
+
+    #sim{
+    font-size: 0.4rem;
+        }
+    
+    .health{
+        font-size: 0.8rem;
+    }
+    .butts{
+        padding: 0.05rem 0.2rem;
+        background-color: yellow;
+        border: 0.5px solid black;
+    }
+
+}
