@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    font-family: 'Press Start 2P', cursive;
+
 }
 h1{
     margin-bottom: 2rem;
+    font-size: 1rem;
 }
 body{
     display: flex;
@@ -52,7 +55,7 @@ body{
 
 #sim{
     border: none;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     padding: 1rem 0.5rem;
     border-radius: 1rem;
 }
@@ -70,6 +73,7 @@ align-items: center;
     padding: 0.5rem 2rem;
     background-color: yellow;
     border: 1px solid black;
+    font-size: 0.6rem;
 }
 
 #healr{
@@ -80,12 +84,12 @@ align-items: center;
 }
 .health{
     margin-bottom: 1rem;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 #result{
     display: nne;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -96,6 +100,7 @@ align-items: center;
 #play{
     background-color: orange;
     border-radius: 10%;
+    font-size: 0.7rem;
     padding: 1rem 2rem;
     border: 0.5px solid black;
     margin-bottom: 1rem;
@@ -104,6 +109,7 @@ align-items: center;
 #reset{
     background-color: rgb(110, 0, 0);
     border-radius: 10%;
+    font-size: 0.7rem;
     padding: 1rem 2rem;
     border: 0.5px solid black;
     margin-bottom: 1rem;
@@ -112,14 +118,14 @@ align-items: center;
 @media screen and (max-width:530px) {
 
     #sim{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
         }
     
     .health{
-        font-size: 1.2em;
+        font-size: 0.8em;
     }
     .butts{
-        padding: 0.2rem 1rem;
+        padding: 0.4rem 1rem;
         background-color: yellow;
         border: 1px solid black;
     }
@@ -129,14 +135,14 @@ align-items: center;
 @media screen and (max-width:430px) {
 
     #sim{
-    font-size: 0.5rem;
+    font-size: 0.6rem;
         }
     
     .health{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .butts{
-        padding: 0.1rem 0.5rem;
+        padding: 0.4rem 0.5rem;
         background-color: yellow;
         border: 1px solid black;
     }
@@ -152,7 +158,8 @@ align-items: center;
         font-size: 0.8rem;
     }
     .butts{
-        padding: 0.05rem 0.2rem;
+        font-size: 0.67rem;
+        padding: 0.2rem 0.2rem;
         background-color: yellow;
         border: 0.5px solid black;
     }
