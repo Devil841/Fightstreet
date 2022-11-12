@@ -7,7 +7,7 @@
 
 }
 h1{
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     font-size: 1rem;
 }
 body{
@@ -95,6 +95,13 @@ align-items: center;
 
 .autoplay{
     width: max-content;
+}
+
+#ryuname{
+    margin-bottom: 1.5rem;
+}
+#kenname{
+    margin-bottom: 1.5rem;
 }
 
 #play{
