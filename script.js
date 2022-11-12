@@ -57,10 +57,12 @@ class games {
    }
 
    reset() {
+      if(this.checkover()){
       Ryu.health = 100;
       Ken.health = 100;
       healthp.innerText = `Health : ${Ryu.health}`;
       healthe.innerText = `Health : ${Ken.health}`;
+   }
    }
 }
 
