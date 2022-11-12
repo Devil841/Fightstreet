@@ -73,7 +73,7 @@ play.addEventListener("click", function (e) {
 });
 
 document.addEventListener("keypress", function yo(e) {
-   if (e.key == "q" && game.checkover()) {
+   if ((e.key == "q" || e.key == "Q") && game.checkover()) {
       document.getElementById("qp").play();
       if (Ryu.health <= 0 || Ken.health <= 0) {
          game.isover = 1;
@@ -87,7 +87,7 @@ document.addEventListener("keypress", function yo(e) {
 });
 
 document.addEventListener("keypress", function (e) {
-   if (e.key == "a" && game.checkover()) {
+   if ((e.key == "a" || e.key == "A") && game.checkover()) {
       document.getElementById("qh").play();
       if (Ryu.health <= 0 || Ken.health <= 0) {
          game.isover = 1;
@@ -101,8 +101,8 @@ document.addEventListener("keypress", function (e) {
 });
 
 document.addEventListener("keypress", function (e) {
-   if (e.key == "p" && game.checkover()) {
-      document.getElementById("qp").play();
+   if ((e.key == "p" || e.key == "P") && game.checkover()) {
+      document.getElementById("fp").play();
       if (Ryu.health <= 0 || Ken.health <= 0) {
          game.isover = 1;
          game.declarewinner(Ken, Ryu);
@@ -114,7 +114,7 @@ document.addEventListener("keypress", function (e) {
 });
 
 document.addEventListener("keypress", function (e) {
-   if (e.key == "l" && game.checkover()) {
+   if ((e.key == "l" || e.key == "L") && game.checkover()) {
       document.getElementById("fh").play();
       if (Ryu.health <= 0 || Ken.health <= 0) {
          game.isover = 1;
@@ -156,7 +156,7 @@ document.getElementById("healr").addEventListener("click", function () {
 
 document.getElementById("attackk").addEventListener("click", function () {
    if (game.checkover()) {
-      document.getElementById("qp").play();
+      document.getElementById("fp").play();
       if (Ryu.health <= 0 || Ken.health <= 0) {
          game.isover = 1;
          game.declarewinner(Ken, Ryu);
