@@ -102,7 +102,7 @@ document.addEventListener("keypress", function (e) {
 
 document.addEventListener("keypress", function (e) {
    if ((e.key == "p" || e.key == "P") && game.checkover()) {
-      document.getElementById("fp").play();
+      document.getElementById("qp").play();
       if (Ryu.health <= 0 || Ken.health <= 0) {
          game.isover = 1;
          game.declarewinner(Ken, Ryu);
@@ -156,7 +156,7 @@ document.getElementById("healr").addEventListener("click", function () {
 
 document.getElementById("attackk").addEventListener("click", function () {
    if (game.checkover()) {
-      document.getElementById("fp").play();
+      document.getElementById("qp").play();
       if (Ryu.health <= 0 || Ken.health <= 0) {
          game.isover = 1;
          game.declarewinner(Ken, Ryu);
